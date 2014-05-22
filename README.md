@@ -21,6 +21,7 @@ Github User Pull Request Viewer :)
 * This application does not use any server, its all in the browser :) Thanks to the events API supporting CORS requests..yee
 * The events API returns only 30 (max) results per request but allows pagination and hence the number of items may be different in each page.
 * Some API result pages may not contain any pullRequestEvent for the user, in that case, it automatically switches to the next page until there are no activities of the user.
+* The application can only provide results till the 10th page :( Why? The events API only limits pagination upto 10 pages.
 
 
 ##Contributing

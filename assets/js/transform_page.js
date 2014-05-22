@@ -52,7 +52,12 @@ var get_pull_data = function(login_name, page){
         var items = [];
 
         if(0 == data.length) {//no more activity for user
-            $('#results').html("No pull activity for User");
+            if( page > 10 ){
+                $('#results').html("Can provide only upto 10 pages :(");
+            }else{
+                $('#results').html("No (more) pull activity for: '" + login_name + "' (page#" + page + ")");
+            }
+            
             return;
         }
 
