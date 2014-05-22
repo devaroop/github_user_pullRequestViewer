@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <link rel="shortcut icon" href="http://getbootstrap.com/assets/ico/favicon.ico"/>
+
+    <title>Github User Pull Request Viewer</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/examples/cover/cover.css" rel="stylesheet">
+
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style id="holderjs-style" type="text/css"></style>
+    <link href="./assets/css/custom.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+
+          <div class="masthead clearfix override_position">
+            <div class="inner">
+              <h3 class="masthead-brand">Github User Pull Request Viewer</h3>
+              <ul class="nav masthead-nav">
+                <li><a target="_blank" href="https://github.com/devaroop/github_user_pullRequestViewer">Fork!</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="lead text-right" style="font-size:17px"> - a guide find all users' community contributions!</p>
+
+          <div class="inner cover">
+            <h1 class="cover-heading">Enter a Github login</h1>
+            <form id="login_name_form">
+              <div class="input-group">
+                <span class="input-group-addon">@</span>
+                <input type="text" class="form-control" id="github_login" placeholder="GitHub Login"/>
+              </div>
+              <p class="lead">
+                <img id="ajax-spinner" src="./assets/images/ajax-loader.gif" class="ajax-loader"/>
+              </p>
+              <p class="lead">
+                <input type="submit" class="btn btn-lg btn-default" value="Search Pull Requests"/>
+              </p>
+            </form>
+          </div>
+          
+          <div id="results" class="text-left">
+          </div>
+
+          <button id="next_page" class="btn btn-default" style="display:none">Next Page</button>
+          
+          <div style="margin-top: 20px">
+            <!-- share on twitter -->
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://devaroop.github.io/github_user_pullRequestViewer/" data-text="Check this tool to know your open source contributions on GitHub" data-via="devaroop123" data-related="devaroop123" data-hashtags="pullRequestViewer">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<!-- end share on twitter -->
+
+          <!-- share and recommend fb -->
+<div class="fb-like" data-href="http://devaroop.github.io/github_user_pullRequestViewer/" data-layout="standard" data-action="recommend" data-show-faces="true" data-share="true"></div>
+          </div>
+          <!-- end fb -->
+
+          <div class="mastfoot override_position">
+            <div class="inner">
+              <p>A fun project by: <a target="_blank" href="https://github.com/devaroop">Devaroop Bhattacharya</a>.</p>
+            </div>
+          </div>
+
+          <!-- follow on twitter -->
+          <a href="https://twitter.com/devaroop123" class="twitter-follow-button" data-show-count="false">Follow @devaroop123</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+          <!-- end follow on twitter -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+         ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/transform_page.js"></script>
+
+    <!-- GA -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-51240986-1', 'devaroop.github.io');
+      ga('send', 'pageview');
+
+    </script>
+    <!-- end GA -->
+
+    <!-- fb like script -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=565166003500132&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <!-- end fb like script -->
+`  </body>
+</html>
+

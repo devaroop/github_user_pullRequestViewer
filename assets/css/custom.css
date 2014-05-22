@@ -1,0 +1,24 @@
+div.override_position {
+    position:static;
+}
+
+div.panel-body{
+    color: black;
+    text-shadow: none;
+}
+
+html,body {
+    height: auto;
+}
+
+div.cover{
+    margin-top: 150px;
+}
+
+div#results {
+    min-height: 300px;
+}
+
+#ajax-spinner {
+    display:none;
+}
