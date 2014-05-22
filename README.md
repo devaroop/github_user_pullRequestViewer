@@ -3,6 +3,8 @@ Github User Pull Request Viewer :)
 
 ### It gives the idea of a user's open source contributions on GitHub, view the pull requests in different tabs, etc. Try link: http://devaroop.github.io/github_user_pullRequestViewer/
 
+![alt tag](http://devaroop.github.io/github_user_pullRequestViewer/assets/images/site_shot.png)
+
 ##How to use?
 
 * Try the above URL, enter your Github Login and hit 'enter'. Thats it !
