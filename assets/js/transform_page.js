@@ -89,6 +89,7 @@ var get_pull_data = function(login_name, page){
     })
     .complete(function(){
         $('#ajax-spinner').hide();
+        $("html, body").animate({ scrollTop: $("#login_name_form").offset().top }, 1000);
     });
 
 };
